@@ -46,7 +46,7 @@ class knapgreedy{
             } 
             
             // if weight of that item is greater than the capacity we added it in the knapsack
-            if (arr[0][j] > m){//doubt-------------------
+            if (arr[0][j] <= m){//doubt-------------------
                 System.out.println("Quantity of item number: " +(j+1) +"added is " +arr[0][j]);
                 m= m - arr[0][j];  //subtracting the remaining
                 sum = sum + (float) arr[1][j];
